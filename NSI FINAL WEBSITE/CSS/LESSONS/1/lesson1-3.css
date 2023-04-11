@@ -1,0 +1,94 @@
+/* CSS pour la page spécifique */
+
+/* Conteneur principal */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Titre de la page */
+  .page-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Sous-titre de la page */
+  .page-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphe de la page */
+  .page-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Liste à puces de la page */
+  .page-list {
+    list-style-type: disc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .page-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Liste numérotée de la page */
+  .page-ordered-list {
+    list-style-type: decimal;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .page-ordered-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Images de la page */
+  .page-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Légende de l'image de la page */
+  .page-image-caption {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Tableau de la page */
+  .page-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .page-table th,
+  .page-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .page-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .page-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Ajoutez ici d'autres styles spécifiques à la page, si nécessaire */
+  

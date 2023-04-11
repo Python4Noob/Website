@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/monokai.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+
+    <link rel="stylesheet" href="../../../CSS/LESSONS/1/lesson1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python4Noob</title>
+    <link rel="icon" type="image/png" href="../../../IMG/icon.png">
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; /* Utilise la hauteur complète de la fenêtre */
+        }
+
+        .left, .right {
+            width: 50%; /* Occupe 50% de la largeur */
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .left {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        .right {
+            background-color: #fff;
+            border-left: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python4Noob</h1>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="https://docs.python.org/3/">Documentation</a></li>
+                <li><a href="#" class="nav-button" onclick="document.getElementById('id01').style.display='block'">Progression</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h1>Bienvenue à Python4Noob</h1>
+            <p>La partie de gauche sera dédiée au "cours",ainsi que aux exemples,tandis que la partie de droite,sera plus la votre...En effet,c'est la partie dans la quelle vous allez
+                pouvoir coder,ainsi que vous entrainer !<br>Lors de cette formation,vous allez apprendre,des bases jusqu'aux plus profond du python  !<br>VOus allez y allez petit à petit...Dans cette leçon,nous allons voir qu'est ce que kle python,et que pouvons nous faire avec
+                <br>Voici comment ce sera structuré:</p>
+                <h2>Introduction</h2>
+                <p>Ici nous allons vous introduire ce que vouys allez apprendre</p>
+                <h2>Cours/Explication</h2>
+                <p>Ici, sera la partie cours,dans laquelle nous allons vous expliquer une nouvelle notion qui sera appuyée par des exemples</p>
+                <h2>Exemples</h2>
+                <p>Ici vous pourrez y trouver des exemples pour illustrer le cours</p>
+                <!--Classe pour écrire en mode highlight avec python-->
+                <pre><code class="python hljs">def bienvenue():
+    print("Bienvenue dans Python4Noob")
+    i = 1
+    if i > 0:
+        print("Python,est un langage de haut niveau !")
+    else:
+        break
+            </code></pre>
+            <h2>A vous de jouer !</h2>
+            <p>Cette partie sera réservée pour vous donner un exercice,que vous allez pouvoir effectuer sur la partie droite grâce à l'interpréteur Python !</p>
+        
+        </div>
+        <!--Link au json-->
+        <script src="../../../../link.json"></script>
+        <div class="right">
+            <h1>Ici c'est chez vous !</h1>
+            <p>Cette partie sera exlusivement pour vous,vous allez pouvoir vous entrainer,tester,échouer,douter,chercher et <strong>réussir !</strong>
+            <br>Vous allez pouvoir modifier les codes/les essayer,une correction vous sera ensuite proposée...Mais faites en sorte d'essayer le plus possible !<br>Allez y, essayez de lancer le programme en appuyant sur le petit triangle !</p>
+            <iframe width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <p>Vous avez vu ?Quelque chose est apparu dans la <strong>console</strong>,c'est ce qu'il y a à droite,elle va effectuer ce que vous lui demandez de faire !
+            <br>Si vous voulez des explication autmoatisées,vous pouvez sélectionner une partie,cliquer en bas de l'interpréteur,et cliquer sur "more"</p>
+            <img src="../../../IMG/aide.png"></div>        </div>
+    </div>
+    <a href="lesson1-2.html" class="sticky-next-btn">1/2 Suivant👉</a>
+    <button class="reset-btn" onclick="resetIframeSrc()">My code</button>
+    <button class="correction-btn" onclick="changeIframeSrc()">Correction</button>
+
+<!------------------------------------------------Script----------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {            
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+</script>
+<!--Footer-->    
+<footer>
+    <div class="container2">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="legal-info">
+      <p>&copy; 2023 Python4Noob. Tous droits réservés.</p>
+      <p>Python4Noob est une plateforme ou vous pouvez apprendre <strong>rapidement</strong>,<strong>simplement</strong> et <strong>gratuitement</strong> le langage de programmation Python</p>
+    </div>
+  </footer>
+  <script src="../../../JS/LESSONS/1/lesson1.js"></script>
+</body>
+
+</html>

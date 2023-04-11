@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/monokai.min.css" />
+    <link rel="stylesheet" href="../../../CSS/LESSONS/1/lesson1-2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python4Noob</title>
+    <link rel="icon" type="image/png" href="../../../IMG/icon.png">
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; /* Utilise la hauteur complète de la fenêtre */
+        }
+
+        .left, .right {
+            width: 50%; /* Occupe 50% de la largeur */
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .left {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        .right {
+            background-color: #fff;
+            border-left: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python4Noob</h1>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="https://docs.python.org/3/">Documentation</a></li>
+                <li><a href="#" class="nav-button" onclick="document.getElementById('id01').style.display='block'">Progression</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h1>Qu'est ce que le python ?🐍</h1>
+            <p>Ah, <strong>Python</strong> ! Ce langage de programmation qui, contrairement à son nom, ne fait pas référence à un serpent constrictor mais plutôt à l'hilarante troupe britannique des <em>Monty Python</em>. Créé en 1989 par <strong>Guido van Rossum</strong>, un type qui devait se dire : <q>Tiens, si je créais un langage qui rendrait les développeurs heureux et les ferait rire aux éclats ?</q> (peut-être).</p>
+            <p>Le Python est devenu un langage de programmation incontournable, doté d'une <em>syntaxe <strong>claire</strong> et <strong>élégante</strong></em>, ce qui le rend aussi simple à lire qu'une blague carambar. Depuis ses débuts, Python a séduit les développeurs, autant par sa puissance que par son côté <em>user-friendly</em>, à tel point qu'il est devenu l'un des langages les plus utilisés dans le monde.</p>
+            
+                <h2>A quoi sert-il ❓</h2>
+                <p>Le <strong>Python</strong>, ce couteau suisse de la programmation, se révèle être un outil polyvalent et précieux dans de nombreux domaines. Voici quelques exemples concrets qui démontrent toute l'utilité de ce langage :</p>
+<ul>
+    <li><em>Automatisation des tâches :</em> Python peut vous aider à automatiser des tâches répétitives, comme renommer des fichiers en masse ou trier vos e-mails, vous laissant ainsi le temps de siroter votre café tranquillement.</li>
+    <li><em>Sciences de données :</em> Grâce à des bibliothèques telles que <strong>Pandas</strong> et <strong>NumPy</strong>, Python facilite la manipulation et l'analyse de données, permettant aux scientifiques de données de dévoiler des tendances et de faire des prédictions.</li>
+
+<li><em>Intelligence artificielle :</em> Python est un acteur majeur dans le domaine de l'IA avec des bibliothèques telles que <strong>TensorFlow</strong> et <strong>PyTorch</strong>, qui facilitent la création et l'entraînement de modèles de machine learning et de réseaux de neurones.</li>
+
+<li><em>Développement web :</em> Grâce à des frameworks tels que <strong>Django</strong> et <strong>Flask</strong>, Python permet de créer des sites web dynamiques et modernes, offrant ainsi une expérience utilisateur agréable et interactive.</li>
+
+<li><em>Cybersécurité :</em> Les experts en sécurité peuvent utiliser Python pour développer des outils de test de pénétration, analyser les vulnérabilités et protéger les réseaux contre les menaces informatiques.</li>
+
+<li><em>Prototypage rapide :</em> La simplicité et la clarté de sa syntaxe font de Python un excellent choix pour le prototypage rapide d'applications, permettant ainsi de valider rapidement des idées avant de s'engager dans des projets plus importants.</li>
+</ul>
+<p>En somme, Python est un véritable caméléon de la programmation, capable de s'adapter à toutes sortes de projets, qu'ils soient petits ou grands, simples ou complexes. Alors n'hésitez plus, adoptez Python et découvrez tout ce que ce langage peut vous apporter !</p>
+        </div>
+        <!--Link au json-->
+        <script src="../../../../link.json"></script>
+        <div class="right">
+            <h1>Exmples concrets !</h1>
+            <p>Voici des exemples de codes,permettant de réaliser des choses diverses !
+            <iframe width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <p><br><br><br><br>Essayez d'appuyer sur les boutons pour voir des exemples (vous pouvez lancer les programmes en appuyant sur le bouton démarrer)</p>
+
+                </div>
+    </div>
+    <a href="lesson1.html" class="sticky-prev-btn">👈Précédent</a>
+    <a href="lesson1-3.html" class="sticky-next-btn">2/2 Valider✅</a>
+    <button class="reset-btn" onclick="resetIframeSrc()">My code</button>
+    <button class="btn_exemple1" onclick="changeIframeSrc1()">Un simple exemple</button>
+    <button class="btn_exemple2" onclick="changeIframeSrc2()">Des fonctions ?</button>
+    <button class="btn_exemple3" onclick="changeIframeSrc3()">python sait dessiner ;)</button>
+    <button class="btn_exemple4" onclick="changeIframeSrc4()">Un peu plus compliqué...</button>
+
+<!------------------------------------------------Script----------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {            
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+</script>
+<!--Footer-->    
+<footer>
+    <div class="container2">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="legal-info">
+      <p>&copy; 2023 Python4Noob. Tous droits réservés.</p>
+      <p>Python4Noob est une plateforme ou vous pouvez apprendre <strong>rapidement</strong>,<strong>simplement</strong> et <strong>gratuitement</strong> le langage de programmation Python</p>
+    </div>
+  </footer>
+  <script src="../../../JS/LESSONS/1/lesson1-2.js"></script>
+</body>
+
+</html>
