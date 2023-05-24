@@ -7,7 +7,7 @@ function changeTitle(newTitle) {
   // Fonction pour détecter si la fenêtre est active ou non
   function handleVisibilityChange() {
     if (document.hidden) {
-      changeTitle("👨‍💻Revenez coder !👨‍💻");
+      changeTitle("👨‍💻Revenez coder dzfgjfngegge!👨‍💻");
     } else {
       changeTitle("Python4Noob");
     }
