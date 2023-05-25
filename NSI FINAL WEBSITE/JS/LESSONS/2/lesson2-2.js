@@ -33,16 +33,26 @@ function setIframeSrc(key) {
 }
 
 function changeIframeSrc() {
-  setIframeSrc("l1_correction");
+  setIframeSrc("l2-2_correction");
   document.querySelector('.correction-btn').style.display = 'none';
   document.querySelector('.reset-btn').style.display = 'inline-block';
 }
 
 function resetIframeSrc() {
-  setIframeSrc("l1_user");
+  setIframeSrc("l2-2_user");
   document.querySelector('.correction-btn').style.display = 'inline-block';
   document.querySelector('.reset-btn').style.display = 'none';
 }
 
 // Charger l'attribut src initial de l'iframe
-setIframeSrc("l1_user");
+setIframeSrc("l2-2_user");
+
+//======================================Cacher/Afficher les explications====================================
+function showExplication() {
+  document.getElementById("explication").style.display = "block";
+}
+
+function hideExplication() {
+  document.getElementById("explication").style.display = "none";
+}
+//=====================================================================================================
