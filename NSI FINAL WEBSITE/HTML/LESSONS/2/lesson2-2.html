@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/monokai.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+
+    <link rel="stylesheet" href="../../../CSS/LESSONS/2/lesson2-2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python4Noob</title>
+    <link rel="icon" type="image/png" href="../../../IMG/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/WM6+q3ou6z5G1f0Kb3tVp8bvnmSy2R7U3Fxb9/" crossorigin="anonymous">
+
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; /* Utilise la hauteur complète de la fenêtre */
+        }
+
+        .left, .right {
+            width: 50%; /* Occupe 50% de la largeur */
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .left {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        .right {
+            background-color: #fff;
+            border-left: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python4Noob</h1>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="https://docs.python.org/3/">Documentation</a></li>
+                <li><a href="#" class="nav-button" onclick="document.getElementById('id01').style.display='block'">Progression</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h1>Les bases du python🐍</h1>
+            <p>Bon vous êtes normalement déjà familiarisé avec notre plateforme (normalement), et si cer n'est pas le cas,je vous conseille d'aller voir <a href="../1/lesson1.html">cette leçon</a>
+              <br>Sinon, c'est parti !
+                <h2>Introduction</h2>
+                <p>Dans cette leçon,nous allons vous apprendre les BASES du python,n'importe qui peut commencer à apprendre à partir de cette leçon.</p>
+                <h2>#Commentaire</h2>
+                <p>Comme vous avez pu le voir dans les exemles précédents,certaines lignes sont précédés de <strong>#</strong>, en effet,
+                  <br>c'est ce que l'on appel un <strong>commentaire</strong>, il permet d'annoter certaines parties du code,pour par exemple expliquer une ligne de code<br>.Ils ne sont pas prit en compte par l'interpréteur,vous pouvez y mettre CE QUE VOUS VOULEZ!</p>
+                <h2>Comment utiliser les commentaires</h2>
+                <p>Il existe 2 types de commentaires: <br>->Ligne unique: <strong>#</strong>
+                <br>->Sur plusieurs lignes: <strong>'''</strong></p>
+                <!--Classe pour écrire en mode highlight avec python-->
+                <pre><code class="python hljs">#Ceci est un commentaire sur 1 seule ligne
+'''
+Ceci est un commentaire sur plusieurs lignes
+Aucune de ces lignes ne sera prises en compte par l'interpréteur Python !
+'''
+            </code></pre>
+            <div class="practice-area">
+              <h2>A vous de jouer !</h2>
+              <p>👉Essayez de mettre un commentaire sur une ligne pour expliquer le print
+             <br>👉Essayez de mettre un commentaire sur plusieurs lignes pour ne pas prendre en compte les erreurs !
+
+              </p>
+              </div>
+        
+        </div>
+        <!--Link au json-->
+        <script src="../../../../link.json"></script>
+        <div class="right">
+            <h1>Les commentaires</h1><br>
+            <iframe width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br><p id="explication" style="display:none;">Regardez bien la leçon pour comprendre les commentaires !!!</p>
+            
+            <div id="pro-tips">
+              <i class="fas fa-lightbulb"></i>
+              <span>💡Pro tips: Les commentaires sont utiles pour commenter vos codes !</span>
+            </div>
+          
+            
+          </div>        </div>
+    </div>
+    <a href="lesson2-3.html" class="sticky-next-btn">2/2 Suivant👉</a>
+    <a href="lesson2-2.html" class="sticky-prev-btn">👈Précédent</a>
+
+    <button class="reset-btn" onclick="resetIframeSrc();hideExplication();">My code</button>
+    <button class="correction-btn" onclick="changeIframeSrc(); showExplication();">Correction</button>
+
+<!------------------------------------------------Script----------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {            
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("code").forEach(function (block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+</script>
+<!--Footer-->    
+<footer>
+    <div class="container2">
+      <ul>
+        <li><a href="../../../HTML/home.html">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="legal-info">
+      <p>&copy; 2023 Python4Noob. Tous droits réservés.</p>
+      <p>Python4Noob est une plateforme ou vous pouvez apprendre <strong>rapidement</strong>,<strong>simplement</strong> et <strong>gratuitement</strong> le langage de programmation Python</p>
+    </div>
+  </footer>
+  <script src="../../../JS/LESSONS/2/lesson2-2.js"></script>
+</body>
+
+</html>
