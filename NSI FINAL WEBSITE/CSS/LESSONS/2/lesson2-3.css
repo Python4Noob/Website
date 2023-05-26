@@ -1,5 +1,5 @@
 /* Vous pouvez changer les couleurs et le style pour vous adapter à vos goûts */
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;500&display=swap");
+/* Vous pouvez changer les couleurs et le style pour vous adapter à vos goûts */
 
 /* Style general du texte */
 html {
@@ -44,19 +44,23 @@ nav li {
 
 /* Bouton Login */
 nav .nav-button {
-  background-color: #2c95c2;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-out;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0.2;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
 }
 
 nav .nav-button:hover {
-  background-color: #444457;
+    background-color: #444457;
 }
+
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -130,7 +134,7 @@ h1 {
 .correction-btn {
   position: absolute;
   right: 20px;
-  bottom: 10vh;
+  bottom: 6vh;
   width: 150px;
   background-color: #4CAF50;
   color: white;
@@ -144,7 +148,7 @@ h1 {
     width: 150px;
     position: absolute;
     right: 20px;
-    bottom: 10vh;
+    bottom: 6vh;
     background-color: #ff9800;
     color: white;
     padding: 10px 20px;
@@ -318,6 +322,43 @@ h1 {
   transition: background-position 0.5s;
 }
 
+@keyframes glowing-red {
+  0% {
+    box-shadow: 0 0 5px #f44336, 0 0 10px #f44336, 0 0 20px #f44336, 0 0 40px #f44336;
+  }
+  100% {
+    box-shadow: 0 0 10px #f44336, 0 0 20px #f44336, 0 0 30px #f44336, 0 0 50px #f44336;
+  }
+}
+
+
+.sticky-prev-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  /* Ajout de l'effet futuriste */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: linear-gradient(45deg, #f44336 0%, #ff6659 50%, #f44336 100%);
+  background-size: 200% 200%;
+  animation: glowing-red 3s infinite;
+}
+
+.sticky-prev-btn:hover {
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+}
+
+
 #pro-tips {
   display: flex;
   align-items: center;
@@ -348,266 +389,6 @@ h1 {
   flex-direction: column;
   height: 37vh;
 }
-/* ---- Barre de progression ---- */
-.progress-bar {
-  position: relative;
-  height: 20px;
-  width: 70%;
-  background: white;
-  border-radius: 10px;
-  border: 2px solid white;
-  background-color: rgb(255, 255, 255);
-  /* box-shadow: 0 0 12px blue; */
-  border: #000 3px solid;
-}
-.container-master .progress-bar {
-  border: #000000 2px solid;
-}
-
-.progress-fill {
-  position: absolute;
-  height: 20px;
-  width: 0%;
-  animation: progress-forward 10s linear infinite ;
-  border-radius: 7px;
-} 
-
-@keyframes progress-forward {
-  0% {
-    width: 0%;
-    background-color: #ff1f1f;
-  }
-  50% {
-    width: 50%;
-    background-color: #2bbfff;
-
-  }
-  100% {
-    width: 100%;
-    background-color: #ffd231;
-  }
-} 
-.container-master .progress-fill {
-  position: absolute;
-  height: 20px;
-  animation: progress-forward2 0s linear infinite ;
-  border-radius: 7px;
-} 
-.container-master .progress-fill2 {
-  position: absolute;
-  height: 20px;
-  animation: progress-forward3 0s linear infinite ;
-  border-radius: 7px;
-} 
-@keyframes progress-forward2 {
-  0% {
-    width: 75%;
-    background-color: #1fb800;
-  }
-  100% {
-    width: 75%;
-    background-color: #1fb800;
-  }
-} 
-@keyframes progress-forward3 {
-  0% {
-    width: 50%;
-    background-color: #007db3;
-  }
-  100% {
-    width: 50%;
-    background-color: #007db3;
-  }
-} 
-/* //// */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  min-height: 1000px;
-}
-/* Master */
-.master-capacity {
-  width: 100%;
-  border-radius: 10px;
-  background-color: #f3f3f3;
-}
-.master-capacity-container {
-  padding: 10px;
-}
-.master-capacity-container h3 {
-  margin: 0;
-  padding-bottom: 15px;
-  font-weight: 100;
-}
-.master-capacity-container h4 {
-  margin: 15px 0 5px;
-  padding-bottom: 15px;
-  font-weight: 100;
-  padding: 0;
-}
-.master-novice {
-  background-color: #fcfcfc;
-  border-radius: 7px;
-  padding: 10px;
-}
-.master-medium {
-  background-color: #fcfcfc;
-  border-radius: 7px;
-  padding: 10px;
-  margin-top: 10px;
-}
-/* Skill */
-.container-skills {
-  margin-top: 25px;
-}
-.skills-capacity {
-  display: flex;
-  align-items: start;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #f3f3f3;
-}
-
-.skills-capacity-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border: 1px solid rgb(156, 156, 156);
-  min-height: 80px;
-  width:20%;
-  background-color: #fdfdfd;
-  border-radius: 5px;
-  margin: 10px;
-}
-/* /// */
-.skills-capacity-container1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0px 10px;
-  font-size: 18px;
-  /* border-bottom: 1px solid rgb(156, 156, 156); */
-}
-.skills-capacity-container2 {
-  padding: 5px;
-}
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-
-.title-container {
-text-align: center;
-margin-bottom: 20px; /* Ajouter de l'espace entre le titre et les panneaux */
-}
-
-.title {
-font-size: 2em; /* Taille du texte du titre */
-font-weight: bold; /* Mettre le texte en gras */
-color: #333; /* Couleur du texte */
-}
-/* Full-width input fields */
 
 
-/* Set a style for all buttons */
 
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  display: flex;
-  align-items: center;
-  height: 25px;
-  padding: 20px;
-  background-color: rgb(216, 22, 22);
-  color: white;
-  border-radius: 10px;
-}
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-.imgcontainer h1 {
-  margin: 20px 0;
-}
-.fa-solid, .fas {
-  font-weight: 900;
-}
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.modal .container {
-  padding: 25px 55px;
-  display: flex;
-  flex-direction: column;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}

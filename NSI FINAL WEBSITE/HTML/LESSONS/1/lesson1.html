@@ -75,8 +75,10 @@
     else:
         break
             </code></pre>
-            <h2>A vous de jouer !</h2>
-            <p>Cette partie sera réservée pour vous donner un exercice,que vous allez pouvoir effectuer sur la partie droite grâce à l'interpréteur Python !</p>
+            <div class="practice-area">
+              <h2>A vous de jouer !</h2>
+              <p>Cette partie sera réservée pour vous donner un exercice,que vous allez pouvoir effectuer sur la partie droite grâce à l'interpréteur Python !</p>
+              </div>
         
         </div>
         <!--Link au json-->
@@ -88,12 +90,103 @@
             <iframe width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
             <p>Vous avez vu ?Quelque chose est apparu dans la <strong>console</strong>,c'est ce qu'il y a à droite,elle va effectuer ce que vous lui demandez de faire !
             <br>Si vous voulez des explication autmoatisées,vous pouvez sélectionner une partie,cliquer en bas de l'interpréteur,et cliquer sur "more"</p>
-            <img src="../../../IMG/aide.png"></div>        </div>
+            <img src="../../../IMG/aide.png">
+            <div id="pro-tips">
+              <i class="fas fa-lightbulb"></i>
+              <span>💡Pro tips: Parfois,nos experts pourront vous donner des conseils de pro !</span>
+            </div></div>        </div>
     </div>
     <a href="lesson1-2.html" class="sticky-next-btn">1/2 Suivant👉</a>
     <button class="reset-btn" onclick="resetIframeSrc()">My code</button>
     <button class="correction-btn" onclick="changeIframeSrc()">Correction</button>
+<!------------------------------------------LEVEL --------------------------------->
 
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="modal-container">
+        <h1>Progression</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-master">
+        <h2>Maitrise <i class="fa-solid fa-graduation-cap"></i></h2>
+        <div class="master-capacity">
+          <div class="master-capacity-container">
+            <div class="master-novice">
+              <h3>Base Python</h3>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+              <h4>Complété à 0%</h4>
+            </div>
+            <div class="master-medium">
+              <h3>Python Intermédiaire</h3>
+              <div class="progress-bar">
+                <div class="progress-fill2"></div>
+              </div>
+              <h4>Complété à 0%</h4></div>
+            </div>
+        </div>
+      </div>
+      <div class="container-skills">
+        <h2>Compétences <i class="fa-solid fa-magnifying-glass-chart"></i></h2>
+        <div class="skills-capacity">
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Utilisation de Python4Noob</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Histoire de Python</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Utilisation de l'interpréteur</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Fonction print()</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les commentaires</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les variables</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les opérateurs</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les conditions</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les boucles</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les fonctions</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Importation des bibliothèques</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Bientôt disponible...</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 <!------------------------------------------------Script----------------------------------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 <script>
@@ -115,7 +208,7 @@
 <footer>
     <div class="container2">
       <ul>
-        <li><a href="#">Accueil</a></li>
+        <li><a href="../../../HTML/home.html">Accueil</a></li>
         <li><a href="#">A propos</a></li>
         <li><a href="#">Contact</a></li>
       </ul>

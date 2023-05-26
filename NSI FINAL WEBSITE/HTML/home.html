@@ -2,135 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Python4Noob</title>
+    <title>Python4Noob 4 Noob</title>
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="icon" type="image/png" href="../IMG/icon.png">
-    <style>
-      /* Ajoutez le code CSS ici */
-    </style>
 </head>
 <body>
   <header>
     <h1>Python4Noob</h1>
     <nav>
         <ul>
-            <li><a href="../home.html">Home</a></li>
+            <li><a class="li-a-home" href="home.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="https://docs.python.org/3/">Documentation</a></li>
-            <li><a href="#" class="nav-button" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+            <li><a href="#" class="nav-button" onclick="document.getElementById('id01').style.display='block'">Progression</a></li>
         </ul>
     </nav>
-</header>
-
-
-    <main>
+  </header>
+  <main>
+    <div class="main-white">
+      <div class="main-white-container">
+        <i class="fa-solid fa-newspaper" style="color: #ffffff;"></i> 
+        <h4>WHAT'S UP ?</h4>
+        <div class="main-white-container-div">
+          <p>Nous avons ajouté de nouveaux cours et de nouvelles features, découvrez les <span>ici</span> !</p>
+          <button onclick="scrollToPanel()">Découvrir plus</button>
+        </div>
+      </div>
+      <div class="main-white-container-2">
         <h2>Bienvenue à Python4Noob</h2>
-        <p>Python4Noob est une application vous permettant d'apprendre rapidement, simplement et gratuitement le langage de programmation python. Au cours de ses 5 leçons, vous allez apprendre les bases du python et aller de plus en plus loin...</p>
-    </main>
+        <h4>Apprendre en s'amusant & développer vos compétences</h4>
+        <p>Python4Noob est une application vous permettant d'apprendre rapidement, simplement et gratuitement le langage de programmation python.</p>
+        <div class="main-white-container-2-div">
+          <button class="button1" onclick="window.location.href='LESSONS/1/lesson1.html'"><i class="fa-solid fa-flag-checkered" style="color: #ffffff;"></i>Commencer mon apprentissage</button>
+          <button class="button2" onclick="scrollToPanel2()"><i class="fa-solid fa-rocket" style="color: #000;"></i>Approfondir mes connaissances</button>
 
+        </div>
+      </div>
+    </div>
+    <div class="main-black">
+      <h2>Savoir, Faire, Savoir-faire</h2>
+      <div class="main-black-image">
+        <div class="main-black-imagechild">
+          <img src="../IMG/man-working-on-laptop.webp" alt="">
+          <h3><span>Apprenez n'importe où</span></h3>
+          <h4>Accédez à votre formation 100% en ligne au lycée, à la maison, en ville, à la montagne... Partout !</h4>
+        </div>
+        <div class="main-black-imagechild">
+          <img src="../IMG/images-removebg-preview.png" alt="">
+          <h3><span>Des professeurs pour vous accompagner</span></h3>
+          <h4>Bénéficiez des conseils de professeur qui vous aide à progresser tout au long de votre apprentissage.</h4>
+        </div>
+        <div class="main-black-imagechild">
+          <img src="../IMG/DALL_E_2023-04-25_19.17.05_-_Hacker_maitre_pc_ordinateur_8k_cartoon_capuche_de_dos_HD_sans_fond-removebg-preview.png" alt="">
+          <h3><span>Devenez un maitre du Python</span></h3>
+          <h4>Réalisez des projets concrets, issus de scénarios métiers, directement applicables en entreprise.</h4>
+        </div>
+      </div>
+    </div>   
+  </main>
+  <div class="explaination">
+    <div class="explaination-container">
+      <h2>Commencer dès maintenant à apprendre le python en cliquant <span>ici</span> ou en choisissant parmis toutes les leçons ci-dessous</h2>
+      <h3>Vous pouvez suivre votre progression en Python grâce à la <span>barre de progression de maitrise</span> !</h3>
+    </div>
+    <div class="explaination-progression-bar">
+      <div class="explaination-progression-bar-container">
+        <h4>Niveau 0 <i class="fa-solid fa-battery-quarter" style="color: #ff1f1f;"></i></h4>
+        <h4>Niveau 100 <i class="fa-solid fa-bolt" style="color: #ffcb0e;"></i></h4>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+  
   <!---------------------------------------------------DIV Lecons-------------------------------------------------------->
-  <div class="title-container">
+  <div class="title-container" id="panel-container">
     <h2 class="title">Les Bases de Python</h2>
   </div>
   <div class="panel-container">
     <div class="panel">
-        <div class="panel-header">Leçon 1: Qu'est-ce que le Python ?</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre qu'est-ce que le python, et à quoi il sert, au travers de nombreux exemples !</div>
-        <a href="../HTML/LESSONS/1/lesson1.html" class="panel-button">Commencer le niveau</a>
-    </div>
-    
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 1: Qu'est-ce que le Python ?</div>
+      <div class="panel-body">Vous allez apprendre qu'est-ce que le <span>Python</span>, et <span>à quoi il sert</span>, au travers de nombreux exemples !</div>
+      <a href="../HTML/LESSONS/1/lesson1.html" class="panel-button">Commencer le niveau</a>
+    </div>    
     <div class="panel">
-        <div class="panel-header">Leçon 2: Les bases de Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre les bases de la programmation Python, notamment les variables, les opérations et les structures de contrôle.</div>
-        <a href="lesson1.html" class="panel-button">Commencer le niveau</a>
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 2: Les bases de Python</div>
+      <div class="panel-body">Vous allez apprendre <span>les bases de la programmation Python</span>, notamment<span> les variables, les opérations</span> et <span>les structures de contrôle.</span></div>
+      <a href="LESSONS/2/lesson2.html" class="panel-button">Commencer le niveau</a>
     </div>
 
     <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
         <div class="panel-header">Leçon 3: Les fonctions en Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez découvrir comment définir et utiliser des fonctions en Python pour réutiliser et organiser votre code.</div>
+        <div class="panel-body">Vous allez découvrir comment <span>définir et utiliser des fonctions en Python</span> pour réutiliser et organiser votre code.</div>
         <a href="lesson2.html" class="panel-button">Commencer le niveau</a>
     </div>
     <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
         <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
+        <div class="panel-body">Vous allez apprendre les concepts de la programmation orientée objet en Python, notamment <span>les classes, les objets et l'héritage.</span></div>
         <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
     </div>
 
   </div>
-  <div class="title-container">
+  <div class="title-container" id="panel-container2">
     <h2 class="title">Approfondissement des bases</h2>
   </div>
   <div class="panel-container">
     <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
         <div class="panel-header">Leçon 1: Qu'est-ce que le Python ?</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre qu'est-ce que le python, et à quoi il sert, au travers de nombreux exemples !</div>
+        <div class="panel-body">Vous allez apprendre qu'est-ce que le python, et à quoi il sert, au travers de nombreux exemples !</div>
         <a href="lessons/test.html" class="panel-button">Commencer le niveau</a>
     </div>
     
     <div class="panel">
-        <div class="panel-header">Leçon 2: Les bases de Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre les bases de la programmation Python, notamment les variables, les opérations et les structures de contrôle.</div>
-        <a href="lesson1.html" class="panel-button">Commencer le niveau</a>
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 2: Les bases de Python</div>
+      <div class="panel-body">Vous allez apprendre les bases de la programmation Python, notamment les variables, les opérations et les structures de contrôle.</div>
+      <a href="lesson1.html" class="panel-button">Commencer le niveau</a>
     </div>
 
     <div class="panel">
-        <div class="panel-header">Leçon 3: Les fonctions en Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez découvrir comment définir et utiliser des fonctions en Python pour réutiliser et organiser votre code.</div>
-        <a href="lesson2.html" class="panel-button">Commencer le niveau</a>
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 3: Les fonctions en Python</div>
+      <div class="panel-body">Vous allez découvrir comment définir et utiliser des fonctions en Python pour réutiliser et organiser votre code.</div>
+      <a href="lesson2.html" class="panel-button">Commencer le niveau</a>
     </div>
     <div class="panel">
-        <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-        <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
-        <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
-    </div>
-    <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
       <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-      <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
+      <div class="panel-body">Python, notamment les classes, les objets et l'héritage.</div>
       <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
-  </div>
-  <div class="panel">
-    <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-    <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
-    <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
-</div>
-<div class="panel">
-  <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-  <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
-  <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
-</div>
-<div class="panel">
-  <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
-  <div class="panel-body">Dans ce niveau, vous allez apprendre les concepts de la programmation orientée objet en Python, notamment les classes, les objets et l'héritage.</div>
-  <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
-</div>
-
+    </div>
+    <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
+      <div class="panel-body">Python, notamment les classes, les objets et l'héritage.</div>
+      <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
+    </div>
+    <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
+      <div class="panel-body">Python, notamment les classes, les objets et l'héritage.</div>
+      <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
+    </div>
+    <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
+      <div class="panel-body">Python, notamment les classes, les objets et l'héritage.</div>
+      <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
+    </div>
+    <div class="panel">
+      <img src="../IMG\images-removebg-preview.png" alt="" class="panel-img">
+      <div class="panel-header">Leçon 4: Les objets et classes en Python</div>
+      <div class="panel-body">Python, notamment les classes, les objets et l'héritage.</div>
+      <a href="lesson3.html" class="panel-button">Commencer le niveau</a>
+    </div>
   </div>
   <!--------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------Test--------------------------------->
+<!------------------------------------------LEVEL --------------------------------->
 
 <div id="id01" class="modal">
-  
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="icon.png" alt="Avatar" class="avatar">
+      <div class="modal-container">
+        <h1>Progression</h1>
+      </div>
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <div class="container-master">
+        <h2>Maitrise <i class="fa-solid fa-graduation-cap"></i></h2>
+        <div class="master-capacity">
+          <div class="master-capacity-container">
+            <div class="master-novice">
+              <h3>Base Python</h3>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+              <h4>Complété à 0%</h4>
+            </div>
+            <div class="master-medium">
+              <h3>Python Intermédiaire</h3>
+              <div class="progress-bar">
+                <div class="progress-fill2"></div>
+              </div>
+              <h4>Complété à 0%</h4></div>
+            </div>
+        </div>
+      </div>
+      <div class="container-skills">
+        <h2>Compétences <i class="fa-solid fa-magnifying-glass-chart"></i></h2>
+        <div class="skills-capacity">
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Utilisation de Python4Noob</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Histoire de Python</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Utilisation de l'interpréteur</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Fonction print()</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les commentaires</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les variables</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les opérateurs</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les conditions</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les boucles</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Les fonctions</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Importation des bibliothèques</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+          <div class="skills-capacity-container">
+            <div class="skills-capacity-container1"><p>Bientôt disponible...</p></div>
+            <div class="skills-capacity-container2"><i class="fa-solid fa-xmark" style="color: #d71414;"></i></div>
+          </div>
+        </div>
+      </div>
     </div>
   </form>
 </div>
@@ -146,10 +263,10 @@ window.onclick = function(event) {
     }
 }
 </script>
-
+<script src="https://kit.fontawesome.com/656f519785.js" crossorigin="anonymous"></script>
 <!--Footer-->    
 <footer>
-    <div class="container">
+    <div class="footer-container">
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">A propos</a></li>
@@ -168,7 +285,6 @@ window.onclick = function(event) {
     </div>
   </footer>
   <script src="../JS/home.js"></script>
-  
 </body>
 
 </html>
